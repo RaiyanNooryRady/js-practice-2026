@@ -13,3 +13,7 @@ switchBtn.addEventListener('click', function () {
     }
    
 });
+let printBtn=document.getElementById('print-btn');
+printBtn.addEventListener('click', function(){
+    window.print();
+});
