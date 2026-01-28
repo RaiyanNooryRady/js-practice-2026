@@ -2,7 +2,8 @@
 //Variables declared with the var keyword can NOT have block scope. (always worked as global scope)
 
 //global scope
-let z=20; 
+let z;
+z=20; 
 let p=2;
 {
     //block scope
