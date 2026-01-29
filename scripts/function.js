@@ -24,3 +24,9 @@ console.log(greetings);
 let fun=hello; //function as value
 console.log(fun, typeof fun);
 
+let carName='volvo';
+function showCarName(carName){
+    console.log('car name is:',carName);
+}
+showCarName('BMW'); //local variable has higher priority
+console.log('global car name is:',carName);
