@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Switch</title>
+    <title>Event</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/switch.css">
 
 </head>
 
@@ -15,21 +14,20 @@
         <nav class="dev-navbar">
             <a href="index.html">Home</a>
             <a href="switch.html">Switch</a>
-             <a href="event.html">Event</a>
+            <a href="event.html">Event</a>
         </nav>
         <h1 id="dev-heading"></h1>
     </header>
     <main>
-        <div class="dev-switch-container">
-            <p>This is the Switch page. Click the button below to switch light</p>
-            <button id="switch-btn">Switch</button>
-            <img src="./images/pic_bulboff.gif" id="bulb-img" alt="">
-            <button id="print-btn">Print</button>
+        <div class="dev-center-container">
+            <h1 id="dev-text">Hi, Visitor!</h1>
+            <button id="event-btn" onclick="myFunction()">Click Me</button>
+            <button id="date-btn" onclick="document.getElementById('dev-text').innerHTML=Date()">Show Date</button>
         </div>
-       
+
     </main>
     <script src="./scripts/script.js"></script>
-    <script src="./scripts/switch.js"></script>
+    <script src="./scripts/event.js"></script>
 </body>
 
 </html>
