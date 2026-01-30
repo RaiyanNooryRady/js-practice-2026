@@ -1,5 +1,5 @@
 //let text= "A brown fox jumps over the \"Lazy Dog\"";
-let text= `A Special brown fox jumps over the "Lazy Dog"`;
+let text= `A Special brown fox jumps over    the "Lazy Dog"    `;
 //let text = "Hello world \Vesting\testing check";
 console.log(text);
 let x='abcd';
@@ -23,3 +23,14 @@ console.log(text.substr(2,7)); //second parameter is length
 console.log(text.substr(4)); //till end
 
 console.log(text.replace("brown", "black")); //case sensitive
+console.log(text.toUpperCase());
+console.log(text.toLowerCase());
+
+let text2="   Hello World    ";
+console.log(text.concat(text2));
+console.log(text.trim());
+console.log(text.charAt(5));
+console.log(text.charCodeAt(5));
+console.log(text[5]);
+
+console.log(text.split(" ")); //split by space
