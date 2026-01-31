@@ -34,3 +34,9 @@ console.log(text.charCodeAt(5));
 console.log(text[5]);
 
 console.log(text.split(" ")); //split by space
+
+//template literals
+let firstVal=34;
+let secondVal=45;
+let strVal=`The sum of ${firstVal} and ${secondVal} is ${firstVal+secondVal}`;
+console.log(strVal);
