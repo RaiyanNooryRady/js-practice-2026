@@ -19,3 +19,12 @@ values.sort(); //default is string sort
 console.log('string sorted values:', values);
 values.sort((a,b)=>{return a-b}); //ascending order
 console.log('sorted values:', values);
+
+let greetings= ["Hello", "Hi", "Welcome", "Greetings"];
+let text="<ul>";
+for(let i=0;i<greetings.length;i++){
+    text+=`<li>${greetings[i]}</li>`;
+}
+text+="</ul>";
+let devArrayDiv=document.getElementById('dev-array');
+devArrayDiv.innerHTML=text;
