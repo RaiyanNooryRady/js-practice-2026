@@ -21,6 +21,10 @@ values.sort((a,b)=>{return a-b}); //ascending order
 console.log('sorted values:', values);
 
 let greetings= ["Hello", "Hi", "Welcome", "Greetings"];
+greetings.push("Salutations"); //add at the end
+greetings[greetings.length]="Howdy"; //add at the end
+greetings[10]="Good day"; //adds empty items in between
+console.log(greetings.length);
 let text="<ul>";
 /* For Loop
 for(let i=0;i<greetings.length;i++){
@@ -31,6 +35,7 @@ for(let i=0;i<greetings.length;i++){
 greetings.forEach(function(item){
     text+=`<li>${item}</li>`;
 });
+
 text+="</ul>";
 let devArrayDiv=document.getElementById('dev-array');
 devArrayDiv.innerHTML=text;
