@@ -22,9 +22,15 @@ console.log('sorted values:', values);
 
 let greetings= ["Hello", "Hi", "Welcome", "Greetings"];
 let text="<ul>";
+/* For Loop
 for(let i=0;i<greetings.length;i++){
     text+=`<li>${greetings[i]}</li>`;
 }
+*/
+//For each loop
+greetings.forEach(function(item){
+    text+=`<li>${item}</li>`;
+});
 text+="</ul>";
 let devArrayDiv=document.getElementById('dev-array');
 devArrayDiv.innerHTML=text;
