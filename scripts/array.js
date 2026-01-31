@@ -37,5 +37,7 @@ greetings.forEach(function(item){
 });
 
 text+="</ul>";
-let devArrayDiv=document.getElementById('dev-array');
-devArrayDiv.innerHTML=text;
+// let devArrayDiv=document.getElementById('dev-array');
+// devArrayDiv.innerHTML=text;
+console.log(Array.isArray(greetings)); //true
+console.log(greetings instanceof Array);
