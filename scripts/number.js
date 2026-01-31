@@ -20,3 +20,26 @@ p=5, q="BCD";
 console.log(p/q); //NaN not a number
 console.log(isNaN(p/q)); //true
 console.log(typeof NaN); //number
+
+let num=123;
+let strNum= num.toString();
+console.log(typeof strNum); // "123"
+
+let floatingVal=44.6784327;
+console.log(floatingVal.toExponential(2));
+console.log(floatingVal.toExponential(3)); 
+console.log(floatingVal.toExponential(4)); 
+
+console.log(floatingVal.toFixed(2));
+console.log(floatingVal.toFixed(4));
+console.log(floatingVal.toFixed(6));
+
+console.log(floatingVal.toPrecision(3));
+console.log(floatingVal.toPrecision(4));
+console.log(floatingVal.toPrecision(5));
+
+console.log((100+23).valueOf());
+console.log(parseInt(floatingVal)); //45
+
+console.log(-1/0); //-Infinity
+console.log(typeof -1/0); //number
