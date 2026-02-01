@@ -1,0 +1,10 @@
+const fruits=["Apple","Banana","Mango","Orange","Pineapple"];
+console.log(fruits.toString());
+fruits.push("bananas");
+console.log(fruits);
+fruits.pop();
+console.log(fruits);
+fruits.shift();
+console.log(fruits);
+fruits.unshift("Strawberry");
+console.log(fruits);
