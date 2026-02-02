@@ -30,3 +30,6 @@ console.log(numbers.lastIndexOf(5)); // returns index of last occurrence of 5
 console.log(numbers.includes(5)); // checks if 5 is present in the array
 console.log(numbers.find(myFunction3)); // returns first value >10
 console.log(numbers.findIndex(myFunction3)); // returns index of first value >10
+
+const d= new Date(2024,11,4); // Note: months are 0-indexed in JavaScript
+console.log(d.toDateString());
