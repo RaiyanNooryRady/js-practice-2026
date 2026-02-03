@@ -24,3 +24,8 @@ console.log(Math.sin(90*Math.PI/180)); // prints 1
 console.log(Math.min(0, 150, 30, 20, -8, -200)); // prints -200
 console.log(Math.max(0, 150, 30, 20, -8, -200)); // prints 150
 console.log(Math.random()); // prints random number between 0 and 1
+console.log(Math.ceil(Math.random()*10)); // prints random number between 0 and 10
+function getRandomInt(min, max){
+    return Math.floor(Math.random()*(max-min+1))+min;
+}
+console.log(getRandomInt(70,81)); // prints random integer between 1 and 100              
