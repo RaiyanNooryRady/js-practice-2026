@@ -16,3 +16,14 @@ console.log(students);
 let rollNumbers=[23,5,12,45,3,18];
 rollNumbers.sort(function(a,b){return a-b;});
 console.log(rollNumbers);
+
+function isLeapYear(year){
+    if(year%400===0 ||(year%4===0 && year%100!==0)){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+console.log(isLeapYear(2020)); //true
+console.log(isLeapYear(1900)); //false
