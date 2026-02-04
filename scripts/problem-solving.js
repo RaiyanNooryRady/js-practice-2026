@@ -54,3 +54,8 @@ const duplicates= numbers.filter(function(value,index,array){
    if(array.indexOf(value)!==index) return true;
 });
 console.log(duplicates);
+//find unique numbers in array
+const unique= numbers.filter(function(value,index,array){
+   if(array.indexOf(value)===index) return true;
+});
+console.log(unique);
