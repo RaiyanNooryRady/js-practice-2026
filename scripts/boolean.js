@@ -21,3 +21,6 @@ console.log(Boolean(x)); //false
 
 x= NaN;
 console.log(Boolean(x)); //false
+
+console.log(2<'18');
+console.log('2'<'18');
