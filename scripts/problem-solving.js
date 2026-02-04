@@ -27,3 +27,30 @@ function isLeapYear(year){
 }
 console.log(isLeapYear(2020)); //true
 console.log(isLeapYear(1900)); //false
+
+
+//How to find number of vowels in a string.
+const vowels="aeiouAEIOU";
+function countVowels(str){
+    let count=0;
+   
+    // for(let char of str){
+    //    if(vowels.includes(char)){
+    //     count++;
+    //    }
+    // }
+    for(let i=0;i<str.length;i++){
+        if(vowels.includes(str[i])){
+            count++;
+        }
+    }
+    return count;
+}
+console.log(countVowels("Hello World")); //3 
+
+//find duplicate numbers in an array
+const numbers=[2,7,5,3,5,2,4,9,4];
+const duplicates= numbers.filter(function(value,index,array){
+   if(array.indexOf(value)!==index) return true;
+});
+console.log(duplicates);
