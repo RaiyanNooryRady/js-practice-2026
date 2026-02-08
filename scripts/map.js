@@ -18,7 +18,7 @@ function myFunction(value,key){
 console.log(text);
 let entryText='';
 for (let x of fruits.entries()){
-    entryText+=x;
+    entryText+=x+" \n";
 }
 console.log(entryText);
 
