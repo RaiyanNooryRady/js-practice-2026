@@ -22,3 +22,4 @@ for (let x of fruits.entries()){
 }
 console.log(entryText);
 
+console.log(fruits.constructor);

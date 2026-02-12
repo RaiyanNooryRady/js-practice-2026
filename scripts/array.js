@@ -41,3 +41,5 @@ text+="</ul>";
 // devArrayDiv.innerHTML=text;
 console.log(Array.isArray(greetings)); //true
 console.log(greetings instanceof Array);
+console.log(greetings.constructor.toString().indexOf("Array")>-1);
+console.log(greetings.constructor===Array);
