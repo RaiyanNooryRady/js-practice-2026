@@ -10,17 +10,17 @@ const jsonVal = `{
         {
             "firstName": "raiyan",
             "lastName": "Noory",
-            "age": "27"
+            "age": 27
         },
         {
             "firstName": "daiyan",
             "lastName": "Dahy",
-            "age": "22"
+            "age": 22
         },
         {
             "firstName":"Tasin",
             "lastName":"Haiyan",
-            "age": "28"
+            "age": 28
         }
     ]
 }`;
