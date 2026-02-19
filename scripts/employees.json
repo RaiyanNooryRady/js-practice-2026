@@ -1,0 +1,19 @@
+{
+    "employees": [
+        {
+            "firstName": "raiyan",
+            "lastName": "Noory",
+            "age": "27"
+        },
+        {
+            "firstName": "daiyan",
+            "lastName": "Dahy",
+            "age": "22"
+        },
+        {
+            "firstName":"Tasin",
+            "lastName":"Haiyan",
+            "age": "28"
+        }
+    ]
+}
