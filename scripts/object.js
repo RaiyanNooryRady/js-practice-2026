@@ -42,3 +42,6 @@ console.log('after deleting CR property:',student);
 let x= new Number(10);
 console.log('x value:',x);
 console.log('x type:',typeof x);
+const person=student; //pointing same object reference
+person.age=45;
+console.log(student.age);
