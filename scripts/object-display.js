@@ -9,3 +9,4 @@ for(let key in person){
 }
 text+='</ul>'
 document.getElementById('demo').innerHTML=text;
+//document.getElementById('demo').innerHTML=JSON.stringify(person);
