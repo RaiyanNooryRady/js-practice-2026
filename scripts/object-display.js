@@ -22,3 +22,9 @@ document.getElementById('demo').innerHTML=text;
 //document.getElementById('demo').innerHTML=JSON.stringify(person);
 
 //getter
+Object.defineProperty(person,"cityName",{
+    get: function(){
+        return 'city name is: '+ this.city;
+    }
+})
+console.log(person.cityName);
