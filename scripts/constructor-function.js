@@ -8,7 +8,7 @@ function Person(first, last, age){
 }
 const x= new Person('raiyan','noory',27);
 Person.prototype.country="Bangladesh";
-console.log(x);
+console.dir(x);
 
 const country= new String("USA");
 String.prototype.doingFun= ()=>{
