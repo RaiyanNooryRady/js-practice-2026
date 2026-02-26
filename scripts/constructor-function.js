@@ -7,4 +7,11 @@ function Person(first, last, age){
     }
 }
 const x= new Person('raiyan','noory',27);
-console.log(x.fullName());
+Person.prototype.country="Bangladesh";
+console.log(x);
+
+const country= new String("USA");
+String.prototype.doingFun= ()=>{
+    return "I am doing fun!";
+}
+console.log(country.doingFun());
