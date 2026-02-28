@@ -14,3 +14,9 @@ function myFunction(value){
 }
 console.log(text);
 console.log(letters.values());
+
+const str= new Set(['aa','bb','aa','cd']);
+console.log(str);
+str.add('cc');
+console.log(str);
+console.log(str.values());
