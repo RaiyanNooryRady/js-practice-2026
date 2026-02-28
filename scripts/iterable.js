@@ -59,3 +59,20 @@ console.log(itMyNum.next());
 console.log(itMyNum.next());
 console.log(itMyNum.next());
 console.log(itMyNum.next());
+
+const str= "myString";
+let strIt=str[Symbol.iterator]();
+console.log(strIt.next());
+console.log(strIt.next());
+console.log(strIt.next());
+console.log(strIt.next());
+console.log(strIt.next());
+console.log(strIt.next());
+console.log(strIt.next());
+console.log(strIt.next());
+console.log(strIt.next());
+
+//spread operator
+console.log([..."Hello"]);
+console.log([...['a',1,'b',5]]);
+//console.log([...34]); returns - is not iterable
