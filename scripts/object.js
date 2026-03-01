@@ -6,7 +6,7 @@ const student= {
     CR: true,
     greetings: function(){
         console.log('Hello, my name is', this.name);
-        this.dreamAnnounce();
+        this.dreamAnnounce(); // this won't work in an arrow function as it doesn't have its own 'this' context
     },
     dreamAnnounce: function(){
         console.log('My dream is to become a scientist.');
