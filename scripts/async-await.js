@@ -1,15 +1,18 @@
 async function hello() { //async keyword returns a promise.
     return "Hello World!";
 }
-const result = hello();
-result.then(function (value) {
-    console.log(value);
-});
+// const result = hello();
+// result.then(function (value) {
+//     console.log(value);
+// });
+const result = await hello();
+console.log(result);
+
 //async function with error handling using try-catch block
+
 
 const status = false;
 console.log('Task1');
-
 //promise definition or producing code
 const promise = new Promise(function (resolve, reject) {
 
