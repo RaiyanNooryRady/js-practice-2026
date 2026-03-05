@@ -106,3 +106,36 @@ async function course() {
    
 }
 course();
+
+const hasMeeting = false;
+const meeting = new Promise((resolve, reject) => {
+    if (!hasMeeting) {
+        const meetingDetails = {
+            name: 'Project Meeting',
+            location: 'Zoom',
+            time: '10:00 AM'
+        }
+        resolve(meetingDetails);
+    }
+    else {
+        reject('Meeting already scheduled.');
+    }
+});
+const addToCalendar = (val) => {
+    
+    const calendar = `${val.name} has been scheduled on ${val.location} at ${val.time}`;
+    
+    return Promise.resolve(calendar);
+};
+
+async function scheduleMeeting() {
+    try{
+        const meetingDetails = await meeting;
+        const calendarMessage= await addToCalendar(meetingDetails);
+        console.log(calendarMessage);
+    }
+    catch(err){
+        console.log(err);
+    }
+}
+scheduleMeeting();
