@@ -53,3 +53,17 @@ function myMove() {
         }
     }
 }
+const clickBtn = document.getElementById('click-btn');
+const buttonContainer = document.getElementById('button-div');    
+clickBtn.addEventListener('click', ()=>{
+    console.log('Button is clicked');
+},true);
+clickBtn.addEventListener('mouseover', function(){
+    console.log('Mouse is over the button');
+});
+clickBtn.addEventListener('mouseout', function(){
+    console.log('Mouse is out of the button');
+});
+buttonContainer.addEventListener('click', function(){
+    console.log('Button container is clicked');
+},true);
