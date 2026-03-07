@@ -1,7 +1,7 @@
 // document.getElementById('demo').innerHTML = 'Hello World!';
 console.dir(document)
-console.dir(document.getElementsByTagName('a'));
-console.dir(document.querySelectorAll('p'));
+//console.dir(document.getElementsByTagName('a'));
+//console.dir(document.querySelectorAll('p'));
 const formElement = document.getElementById('dev-form');
 const displayContainer = document.getElementById('display-form');
 const formObj = document.forms['dev-form'];
@@ -67,3 +67,28 @@ clickBtn.addEventListener('mouseout', function(){
 buttonContainer.addEventListener('click', function(){
     console.log('Button container is clicked');
 },true);
+
+const demo2= document.getElementById('demo');
+console.log(`demo2: ${demo2}`);
+console.dir(`demo node: ${demo2.lastChild.nodeValue}`);
+console.log(demo2.childNodes[0].nextSibling.innerHTML);
+
+const para=document.createElement('p');
+para.innerText = 'This is a new paragraph';
+const div1= document.getElementById('div1');
+div1.appendChild(para);
+
+const para2= document.createElement('p');
+const textNode= document.createTextNode('This is another new paragraph');
+para2.appendChild(textNode);
+div1.appendChild(para2);
+
+const p1= document.getElementById('p1');
+div1.insertBefore(para2, p1);
+
+const p2= document.getElementById('p2');
+setTimeout(() => {
+   // p2.remove();
+   //div1.removeChild(p2);
+   div1.replaceChild(para2, p2);
+}, 2000);
