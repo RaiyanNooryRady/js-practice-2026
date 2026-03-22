@@ -18,3 +18,24 @@ function closeWindow() {
         console.log('No window to close');
     }
 }
+function firstFun() {
+   // window.history.back();
+   //window.alert('Hello, welcome to JavaScript!');
+   let text;
+   if(window.confirm('Are you happy?')){
+    text = 'You are happy!';
+   }
+   else{
+    text = 'You are not happy!';
+   }
+    console.log(text);
+}
+function secondFun() {
+   // window.history.forward();
+   let text;
+    text=window.prompt('what is your name?');
+    if(!text){
+        console.log('user cancelled the prompt');
+    }
+    console.log(text);
+}
