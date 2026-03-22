@@ -21,14 +21,16 @@ function closeWindow() {
 function firstFun() {
    // window.history.back();
    //window.alert('Hello, welcome to JavaScript!');
-   let text;
-   if(window.confirm('Are you happy?')){
-    text = 'You are happy!';
-   }
-   else{
-    text = 'You are not happy!';
-   }
-    console.log(text);
+//    let text;
+//    if(window.confirm('Are you happy?')){
+//     text = 'You are happy!';
+//    }
+//    else{
+//     text = 'You are not happy!';
+//    }
+//     console.log(text);
+document.cookie='username= Raiyan';
+console.log(document.cookie);
 }
 function secondFun() {
    // window.history.forward();
