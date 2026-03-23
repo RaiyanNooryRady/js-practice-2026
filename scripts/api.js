@@ -29,3 +29,18 @@ function clearLocalStorage(){
 }
 
 console.log(localStorage);
+
+function setSessionStorage(key, value) {
+  sessionStorage.setItem(key, value);
+}
+function getSessionStorage(key){
+  console.log(sessionStorage.getItem(key));
+}
+function removeSessionStorage(key){
+  sessionStorage.removeItem(key);
+}
+function clearSessionStorage(){
+  sessionStorage.clear();
+}
+
+console.log(sessionStorage);
