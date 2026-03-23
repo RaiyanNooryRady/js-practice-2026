@@ -24,5 +24,8 @@ function getLocalStorage(key){
 function removeLocalStorage(key){
   localStorage.removeItem(key);
 }
+function clearLocalStorage(){
+  localStorage.clear();
+}
 
 console.log(localStorage);
