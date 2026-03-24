@@ -15,6 +15,8 @@ const validation = () => {
     demo.innerHTML = inputObj.validationMessage;
   }
 }
+//local storage
+
 function setLocalStorage(key, value) {
   localStorage.setItem(key, value);
 }
@@ -29,6 +31,8 @@ function clearLocalStorage() {
 }
 
 console.log(localStorage);
+
+//session storage
 
 function setSessionStorage(key, value) {
   sessionStorage.setItem(key, value);
@@ -45,7 +49,7 @@ function clearSessionStorage() {
 
 console.log(sessionStorage);
 
-
+//worker Object
 
 console.log(Worker)
 let w;
@@ -77,4 +81,25 @@ function stopWorker() {
   else {
     alert('not supported web server');
   }
+}
+
+//fetch api
+const demo = document.getElementById('demo');
+function getData() {
+
+  fetch('http://127.0.0.1:5500/scripts/data.txt')
+    .then((res) => {
+      return res.text();
+    })
+    .then(data => {
+      console.log('hello2');
+      demo.innerHTML = data;
+    })
+  console.log('hello'); //prints first because of asynchronous req
+}
+async function getDataUsingAsync() {
+  const response=await fetch('http://127.0.0.1:5500/scripts/data.txt');
+  const data= await response.text();
+  console.log(data);
+  demo.innerHTML=data;
 }
