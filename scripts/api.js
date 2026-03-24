@@ -18,13 +18,13 @@ const validation = () => {
 function setLocalStorage(key, value) {
   localStorage.setItem(key, value);
 }
-function getLocalStorage(key){
+function getLocalStorage(key) {
   console.log(localStorage.getItem(key));
 }
-function removeLocalStorage(key){
+function removeLocalStorage(key) {
   localStorage.removeItem(key);
 }
-function clearLocalStorage(){
+function clearLocalStorage() {
   localStorage.clear();
 }
 
@@ -33,14 +33,48 @@ console.log(localStorage);
 function setSessionStorage(key, value) {
   sessionStorage.setItem(key, value);
 }
-function getSessionStorage(key){
+function getSessionStorage(key) {
   console.log(sessionStorage.getItem(key));
 }
-function removeSessionStorage(key){
+function removeSessionStorage(key) {
   sessionStorage.removeItem(key);
 }
-function clearSessionStorage(){
+function clearSessionStorage() {
   sessionStorage.clear();
 }
 
 console.log(sessionStorage);
+
+
+
+console.log(Worker)
+let w;
+function startWorker() {
+  //workers api
+  const demo = document.getElementById('demo');
+  if (typeof Worker !== 'undefined') {
+    //worker available
+
+    if (typeof w == 'undefined') {
+      w = new Worker('./scripts/worker.js');
+      console.log(w);
+    }
+    //listener
+    w.onmessage = (event) => {
+      document.getElementById('demo').innerHTML = event.data;
+    }
+
+  }
+  else {
+    alert('Your browser does not support web worker');
+  }
+}
+function stopWorker() {
+  if (typeof Worker != 'undefined') {
+    w.terminate();
+    w = undefined;
+  }
+  else {
+    alert('not supported web server');
+  }
+}
