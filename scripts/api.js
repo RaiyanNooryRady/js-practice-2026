@@ -103,3 +103,19 @@ async function getDataUsingAsync() {
   console.log(data);
   demo.innerHTML=data;
 }
+function getGeoLocation(){
+  console.log(navigator);
+  if(navigator.geolocation){
+    navigator.geolocation.getCurrentPosition(showPosition,showError);
+  }
+  else{
+    demo.innerHTML='location not found!';
+  }
+}
+function showPosition(position){
+ // console.log(position);
+  demo.innerHTML=`Lattitude: ${position.coords.latitude}, Longitude:${position.coords.longitude}`
+}
+function showError(err){
+  console.log(err.message);
+}
