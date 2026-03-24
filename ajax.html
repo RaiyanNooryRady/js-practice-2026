@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Functions</title>
+    <title>AJAX</title>
     <link rel="stylesheet" href="./styles/style.css">
+
 </head>
 
-<body>
+<body id="switch-page">
     <header>
         <nav class="dev-navbar">
             <a href="index.html">Home</a>
@@ -21,18 +22,24 @@
             <a href="dom.html">Dom</a>
             <a href="api.html">API</a>
             <a href="ajax.html">AJAX</a>
-
         </nav>
         <h1 id="dev-heading"></h1>
     </header>
     <main>
-        <div class="dev-center-container">
-
+    
+        <div style="padding: 20px;">
+            <div id="demo">
+                change the content
+            </div>
+            <p id="demo2">change the demo2</p>
+            <button onclick="loadData(callback1)">Load Data</button>
+             <button onclick="loadData(callback2)">Load Data2</button>
         </div>
-    </main>
 
+    </main>
     <script src="./scripts/script.js"></script>
-    <script src="./scripts/function-deep.js"></script>
+    <script src="./scripts/ajax.js"></script>
+
 </body>
 
 </html>
