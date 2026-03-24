@@ -106,7 +106,9 @@ async function getDataUsingAsync() {
 function getGeoLocation(){
   console.log(navigator);
   if(navigator.geolocation){
-    navigator.geolocation.getCurrentPosition(showPosition,showError);
+    // navigator.geolocation.getCurrentPosition(showPosition,showError);
+        navigator.geolocation.watchPosition(showPosition,showError);
+
   }
   else{
     demo.innerHTML='location not found!';
