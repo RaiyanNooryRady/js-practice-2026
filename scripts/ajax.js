@@ -84,3 +84,14 @@ function sendData() {
             console.log(err);
         })
 }
+const abc={
+    name:'Jhon Doe',
+    date: new Date(),
+    age: 30,
+    alive: true,
+    num: undefined, //won't work for json
+    fun: function(){
+        return 'hello world'
+    } //won't work for json
+}
+console.log(JSON.stringify(abc));
