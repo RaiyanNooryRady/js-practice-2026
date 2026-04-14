@@ -18,3 +18,9 @@ person['name']='John';
 person['age']=30;
 console.log(typeof person, typeof arr);
 console.dir(person);
+console.log(person instanceof Array);
+const student={
+    name:'John',
+    age:30,
+}
+console.log(student instanceof Array)
