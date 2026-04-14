@@ -15,10 +15,11 @@ const cars= [
     {type: "Audi", year: 2020},
     {type: "Ford", year: 2018}
 ]
+console.log(cars.sort()); // sorts by type as strings
 console.log("sorted cars by year:", cars.sort(function(a,b){return a.year -b.year}));
 // sorting cars by type
 console.log("sorted cars by type:", cars.sort(function(a,b){
     if(a.type.toLowerCase()<b.type.toLowerCase()) {return -1;}
     if(a.type.toLowerCase()>b.type.toLowerCase()) {return 1;}
     return 0;
-}))
+}));
