@@ -88,3 +88,14 @@ function findDuplicates(value, index){
 }
 arr.forEach(findDuplicates);
 console.log(duplicateArr);
+//how to find out the unique numbers from an array
+const uniqueNumbers= [];
+arr.forEach(findUniques);
+
+function findUniques(value,index){
+    let firstIndex=arr.indexOf(value);
+   if(firstIndex===index){
+    uniqueNumbers.push(value);
+   }
+}
+console.log(uniqueNumbers);
