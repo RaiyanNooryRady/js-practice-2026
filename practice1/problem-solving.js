@@ -77,3 +77,14 @@ function vowelCount(str){
 }
 let res=vowelCount(str);
 console.log(res);
+//how to find out the duplicate numbers from an array
+const arr=[5,63,5, 12, 9, 4, 10, 20, 12, 7, 4];
+const duplicateArr=[];
+function findDuplicates(value, index){
+   let firstIndex=arr.indexOf(value);
+   if(firstIndex!==index){
+    duplicateArr.push(value);
+   }
+}
+arr.forEach(findDuplicates);
+console.log(duplicateArr);
